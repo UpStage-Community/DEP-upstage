@@ -1,0 +1,1 @@
+json.qompanies @qompanies, partial: 'qompany', as: :qompany

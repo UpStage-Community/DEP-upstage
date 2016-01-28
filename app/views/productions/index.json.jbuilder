@@ -1,0 +1,1 @@
+json.productions @productions, partial: 'production', as: :production
