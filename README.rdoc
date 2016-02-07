@@ -1,0 +1,43 @@
+Goal: To bring the theatre community together in one place, promoting meaningful works driven by the needs of the audience the theatremakers are there to create for.
+
+Todos:
+Finish user stories and mvp
+Upload images from consortium
+Paper questionairres - Research, validity of digital cards, what are the questions, etc.
+Research private vs public, open source material
+
+User Stories
+
+As an audience member
+
+  MVP
+  -I can log in with twitter or facebook
+  -I can create a profile with a photo and bio
+  -I can see upcoming productions
+  -I can see a map of where the production is
+  -I can rate the productions
+  -I can leave feedback on productions
+  -I can upvote and downvote other's feedback
+
+  STRETCH
+  -I can comment on others' feedback (threaded)
+  -My actions will be automatically tweeted/sent to facebook or other social media
+  -I can follow companies, performers, other reviewers
+  -I can view performance venues in my area
+  -I can search for performances based on time and location
+  -I can purchase tickets for the venue directly on upstage
+  -I can update my own calendar with purchased tickets
+  -I can invite friends to the productions I am attending
+  -I can search and learn by genre
+
+As a theatremaker
+
+  MVP
+  -I can not vote or review productions I am a part of
+  -My profile will show the productions I have been a part of
+  -My profile will include reviews of productions I have been a part of
+
+  STRETCH
+  -My profile will include reviews I
+
+As a company admin
