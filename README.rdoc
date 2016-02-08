@@ -71,3 +71,5 @@ Research private vs public, open source material
   - I can update my own calendar with purchased tickets (Calendar)
   - I can invite friends to the productions I am attending (Posts)
   - I can search and learn by genre (Searching/Tags/Genre)
+
+<img src=https://github.com/creatyvtype/upstage/blob/master/images/IMG_0706.JPG width=70%>
