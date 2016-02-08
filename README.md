@@ -1,10 +1,5 @@
-Goal: To bring the theatre community together in one place, promoting meaningful works driven by the needs of the audience the theatremakers are there to create for.
-
-Todos:
-Finish user stories and mvp
-Upload images from consortium
-Paper questionnaires - Research, validity of digital cards, what are the questions, etc.
-Research private vs public, open source material
+#Goal
+To bring the theatre community together in one place, promoting meaningful works driven by the needs of the audience the theatremakers are there to create for.
 
 #User Stories
 
