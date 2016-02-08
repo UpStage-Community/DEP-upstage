@@ -6,9 +6,9 @@ Upload images from consortium
 Paper questionnaires - Research, validity of digital cards, what are the questions, etc.
 Research private vs public, open source material
 
-**User Stories
+#User Stories
 
-  *Epics
+##Epics
 
   - Account Creation
     - Split for company vs individual
@@ -22,23 +22,23 @@ Research private vs public, open source material
     - Validations for collaborators and uniqueness
     - Views on Production, Company, Collaborator, and own Pages
 
-  *MVP (First release)
+##MVP (First release)
 
-  As a company admin
+ - As a company admin
   - I can log in with my company's Twitter account (Account Creation)
   - I can create and edit a profile for my company (Account Creation)
   - I can create and edit upcoming productions (Productions)
   - I can link other users involved in my company and productions (Productions)
   - I can view feedback from audiences (Feedback)
 
-  As a theatremaker
+ - As a theatremaker
   - I can log in with my Twitter account (Account Creation)
   - I can create and edit a basic profile (Account Creation)
   - I can view the productions I have been a part of on my page (Productions)
   - I can not vote or review productions I am a part of (Feedback)
   - I can view reviews of productions I have been a part of on my page (Feedback)
 
-  As an audience member
+ - As an audience member
   - I can log in with my Twitter account (Account Creation)
   - I can create and edit a basic profile (Account Creation)
   - I can see upcoming productions (Productions)
@@ -47,20 +47,20 @@ Research private vs public, open source material
   - I can leave feedback on productions I have seen (Feedback)
   - I can upvote and downvote other's feedback (Feedback)
 
-  *FUTURE FEATURES
+##FUTURE FEATURES
 
-  As a company admin
+ - As a company admin
   - I can see who is following my company (Following)
   - I can add and edit genres for my company and productiong (Tags/Genre)
   - I can sell tickets to my productinos directly on UpStage (Ticketing)
     - Brown Paper API? Stripe?
   - I can receive donations from users (Ticketing)
 
-  As a theatremaker
+ - As a theatremaker
   - I can comment on others' feedback, including productions I'm a part of (Feedback)
   - My profile will include reviews I was tagged in (Tagging)
 
-  As an audience member
+ - As an audience member
   - I can comment on others' feedback (Feedback)
   - I can tag other users in my reviews and comments (Tagging)
   - My actions will be automatically tweeted/sent to facebook or other social media (Posts)
