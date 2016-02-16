@@ -1,0 +1,12 @@
+<li>
+  <ul>
+
+    <% user.attributes.each do |key, val|  %>
+      <li><%= key %>: <%= val %></li>
+    <% end  %>
+
+    <li><%= image_tag user.avatar.url(:thumb) %></li>
+    <li><%= image_tag user.image_url %></li>
+
+  </ul>
+</li>

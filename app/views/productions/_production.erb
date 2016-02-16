@@ -1,4 +1,11 @@
 <li>
-  <%= production.title %>
-  <%= image_tag production.image.url(:thumb) %>
+  <ul>
+
+    <% production.attributes.each do |key, val|  %>
+      <li><%= key %>: <%= val %></li>
+    <% end  %>
+
+    <li><%= image_tag production.image.url(:thumb) %></li>
+
+  </ul>
 </li>

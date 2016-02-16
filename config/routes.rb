@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'productions#index'
 
   resources :productions #, only: [:index, :show]
+  resources :users
 
   get '/auth/:provider/callback', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
