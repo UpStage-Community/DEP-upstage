@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
-  has_attached_file :avatar, styles: { medium: "600x200>", thumb: "300x200>" }, default_url: "default.png"
-  validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
+  has_attached_file :image, styles: { medium: "600x200>", thumb: "300x200>" }, default_url: "default.png"
+  validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
   has_many :productions, through: :production_members
   has_many :production_members
   has_many :companies, through: :company_members
