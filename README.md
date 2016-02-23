@@ -18,6 +18,7 @@ To bring the theatre community together in one place, promoting meaningful works
     - Views on Production, Company, Collaborator, and own Pages
 
 ##MVP (First release)
+-
 
  - As a company admin
   - I can log in with my company's Twitter account (Account Creation)
@@ -27,13 +28,17 @@ To bring the theatre community together in one place, promoting meaningful works
   - I can view feedback from audiences (Feedback)
 
  - As a theatremaker
+ * i can be an admin on multiple companies
   - I can log in with my Twitter account (Account Creation)
   - I can create and edit a basic profile (Account Creation)
   - I can view the productions I have been a part of on my page (Productions)
   - I can not vote or review productions I am a part of (Feedback)
   - I can view reviews of productions I have been a part of on my page (Feedback)
 
- - As an audience member
+ - As a patron
+* i can request admin priveleges from upstage
+* My first POE is an anonymous form
+
   - I can log in with my Twitter account (Account Creation)
   - I can create and edit a basic profile (Account Creation)
   - I can see upcoming productions (Productions)
@@ -52,10 +57,12 @@ To bring the theatre community together in one place, promoting meaningful works
   - I can receive donations from users (Ticketing)
 
  - As a theatremaker
+ * I can make my bio look like a resume
   - I can comment on others' feedback, including productions I'm a part of (Feedback)
   - My profile will include reviews I was tagged in (Tagging)
 
- - As an audience member
+ - As a patron
+ * I can upload a photo and crop it to a square for thumbnail and rectangle for main
   - I can comment on others' feedback (Feedback)
   - I can tag other users in my reviews and comments (Tagging)
   - My actions will be automatically tweeted/sent to facebook or other social media (Posts)
@@ -68,3 +75,12 @@ To bring the theatre community together in one place, promoting meaningful works
   - I can search and learn by genre (Searching/Tags/Genre)
 
 <img src=https://github.com/creatyvtype/upstage/blob/master/images/IMG_0706.JPG width=70%>
+
+Anonymous forms
+- include star rating overall
+- include a few fields for short comments on different aspects
+  - later, these comments will prepopulate feedback form?
+  - private vs. public
+  - anonymous vs not (anonymous will NOT be made public)
+
+Email notification for any meta feedbackers once edited
