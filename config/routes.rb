@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   resources :productions #, only: [:index, :show]
   resources :users
+  resources :companies
 
+  get '/about', to: 'pages#about'
   get '/auth/:provider/callback', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 

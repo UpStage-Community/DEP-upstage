@@ -13,3 +13,22 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function(){
+
+  $('#create-account-link').on('click', function(e){
+    e.preventDefault()
+    $('.modal').hide()
+    $('#create-account-modal').show()
+  })
+
+  $('#sign-in-link').on('click', function(e){
+    e.preventDefault()
+    $('#sign-in-modal').show()
+  })
+
+  $('.exit').on('click', function(e){
+    e.preventDefault()
+    $(this).parent().hide()
+  })
+})

@@ -84,3 +84,16 @@ Anonymous forms
   - anonymous vs not (anonymous will NOT be made public)
 
 Email notification for any meta feedbackers once edited
+
+Notes on forms:
+
+age range
+email (sometimes there's a raffle if you give your name/email)
+where you live (SF or otherwise), usually zip code
+annual gross income range
+gender identity male/female/other_____
+race identity
+how did you hear about this show?
+would you like to volunteer for our company?
+please donate!
+some include actual feedback on the performance

@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+
+#sign-in-modal {
+  display: none;
+}
+
+#create-account-modal  {
+  display: none;
+}
+
+.modal {
+  width: 80%;
+  height: 100px;
+  border: 1px solid black;
+  top: 10%;
+  left: 10%;
+  position: fixed;
+  background: white;
+}
