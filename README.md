@@ -18,27 +18,25 @@ To bring the theatre community together in one place, promoting meaningful works
     - Views on Production, Company, Collaborator, and own Pages
 
 ##MVP (First release)
--
 
- - As a company admin
+- As a company admin
   - I can log in with my company's Twitter account (Account Creation)
   - I can create and edit a profile for my company (Account Creation)
   - I can create and edit upcoming productions (Productions)
   - I can link other users involved in my company and productions (Productions)
   - I can view feedback from audiences (Feedback)
 
- - As a theatremaker
- * i can be an admin on multiple companies
+- As a theatremaker
+  - I can be an admin on multiple companies (Account Creation)
   - I can log in with my Twitter account (Account Creation)
   - I can create and edit a basic profile (Account Creation)
   - I can view the productions I have been a part of on my page (Productions)
   - I can not vote or review productions I am a part of (Feedback)
   - I can view reviews of productions I have been a part of on my page (Feedback)
 
- - As a patron
-* i can request admin priveleges from upstage
-* My first POE is an anonymous form
-
+- As a patron
+  - I can request admin priveleges from upstage
+  - My first POE is an anonymous form
   - I can log in with my Twitter account (Account Creation)
   - I can create and edit a basic profile (Account Creation)
   - I can see upcoming productions (Productions)
@@ -49,20 +47,20 @@ To bring the theatre community together in one place, promoting meaningful works
 
 ##FUTURE FEATURES
 
- - As a company admin
+- As a company admin
   - I can see who is following my company (Following)
   - I can add and edit genres for my company and productiong (Tags/Genre)
   - I can sell tickets to my productinos directly on UpStage (Ticketing)
     - Brown Paper API? Stripe?
   - I can receive donations from users (Ticketing)
 
- - As a theatremaker
- * I can make my bio look like a resume
+- As a theatremaker
+  - I can make my bio look like a resume
   - I can comment on others' feedback, including productions I'm a part of (Feedback)
   - My profile will include reviews I was tagged in (Tagging)
 
- - As a patron
- * I can upload a photo and crop it to a square for thumbnail and rectangle for main
+- As a patron
+  -I can upload a photo and crop it to a square for thumbnail and rectangle for main
   - I can comment on others' feedback (Feedback)
   - I can tag other users in my reviews and comments (Tagging)
   - My actions will be automatically tweeted/sent to facebook or other social media (Posts)
@@ -87,13 +85,13 @@ Email notification for any meta feedbackers once edited
 
 Notes on forms:
 
-age range
-email (sometimes there's a raffle if you give your name/email)
-where you live (SF or otherwise), usually zip code
-annual gross income range
-gender identity male/female/other_____
-race identity
-how did you hear about this show?
-would you like to volunteer for our company?
-please donate!
+age range  
+email (sometimes there's a raffle if you give your name/email)  
+where you live (SF or otherwise), usually zip code  
+annual gross income range  
+gender identity male/female/other_____  
+race identity  
+how did you hear about this show?  
+would you like to volunteer for our company?  
+please donate!  
 some include actual feedback on the performance
