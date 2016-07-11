@@ -11,12 +11,24 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'gmail.com',
+    user_name:            ENV['GMAIL_USERNAME'],
+    password:             ENV['GMAIL_PASSWORD'],
+    authentication:       'plain',
+    enable_starttls_auto: true  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -46,7 +58,7 @@ Rails.application.configure do
     s3_credentials: {access_key_id: ENV["AWS_ACCESS_KEY_ID"], 
       secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"]},
     s3_region: ENV["AWS_REGION"],
-    bucket: "upstagephotos",
+    bucket: "upstagedev",
     url: ":s3_domain_url",
     path: "/:class/images/:id_:basename.:style.:extention"
 

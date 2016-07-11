@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :companies
 
   get '/about', to: 'pages#about'
+  get '/thanks', to: 'pages#thanks'
   get '/auth/:provider/callback', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 

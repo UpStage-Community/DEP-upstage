@@ -14,7 +14,12 @@ class Company < ActiveRecord::Base
   validates :url, presence: true
   validates :short_description, presence: true,length: { maximum: 20 }
   validates :long_description, presence: true, length: { maximum: 200 }
-  validates :image, presence: true
+
+  after_initialize :init
+
+  def init
+    self.active = false
+  end
 
   # def rating
   #   if qritiques.length > 0
