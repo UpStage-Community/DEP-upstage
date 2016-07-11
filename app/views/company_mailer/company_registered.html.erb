@@ -5,7 +5,18 @@
   </head>
   <body>
 
-    <h1>Registration Request From <%= @company.name%></h1>
+    <h1>Registration Request</h1>
+    Name: <%= @company.name %>
+    Email: <%= @company.email %>
+    Website: <a href=<%= @company.url %> traget=_blank><%= @company.url %></a>
+    Phone: <%= @company.phone %>
+    Short Description: <%= @company.short_description %>
+    Long Description: <%= @company.long_description %>
+    Image: 
+    <%= image_tag @company.image.url(:medium) %>
+
+    <%= link_to "Approve", :root %>
+    
 
   </body>
 </html>

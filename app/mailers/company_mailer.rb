@@ -5,7 +5,7 @@ class CompanyMailer < ApplicationMailer
 		p @company
 		
 		mail(to: "info@upstagecommunity.com", 
-			# from: @company.email, 
+			from: @company.email, 
 			subject: "Company Registration Request")
 	end
 end
