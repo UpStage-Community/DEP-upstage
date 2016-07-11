@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'productions#index'
+  root 'pages#home'
 
   resources :productions #, only: [:index, :show]
   resources :users
