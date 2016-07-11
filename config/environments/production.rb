@@ -85,14 +85,13 @@ Rails.application.configure do
   #   secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
   #   s3_region: ENV.fetch('AWS_REGION'),
 
-  storage: :s3,
-  s3_credentials: {access_key_id: ENV["AWS_ACCESS_KEY_ID"], 
-    secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"]},
-  s3_region: ENV["AWS_REGION"],
-  bucket: "upstagephotos",
-  url: ":s3_domain_url",
-  path: "/:class/images/:id_:basename.:style.:extention"
+    storage: :s3,
+    s3_credentials: {access_key_id: ENV["AWS_ACCESS_KEY_ID"], 
+      secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"]},
+    s3_region: ENV["AWS_REGION"],
+    bucket: "upstagephotos",
+    url: ":s3_domain_url",
+    path: "/:class/images/:id_:basename.:style.:extention"
 
   }
-}
 end
