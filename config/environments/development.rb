@@ -63,4 +63,6 @@ Rails.application.configure do
     path: "/:class/images/:id_:basename.:style.:extention"
 
   }
+
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end

@@ -18,7 +18,7 @@ class Company < ActiveRecord::Base
   after_initialize :init
 
   def init
-    self.active = false
+    self.active ||= false
   end
 
   # def rating

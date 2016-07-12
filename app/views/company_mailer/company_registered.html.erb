@@ -6,16 +6,18 @@
   <body>
 
     <h1>Registration Request</h1>
-    Name: <%= @company.name %>
-    Email: <%= @company.email %>
-    Website: <a href=<%= @company.url %> traget=_blank><%= @company.url %></a>
-    Phone: <%= @company.phone %>
-    Short Description: <%= @company.short_description %>
-    Long Description: <%= @company.long_description %>
-    Image: 
+    Name: <%= @company.name %> <br>
+    Email: <%= @company.email %> <br>
+    Website: <a href=<%= @company.url %> traget=_blank><%= @company.url %></a><br>
+    Phone: <%= @company.phone %><br>
+    Short Description: <%= @company.short_description %><br>
+    Long Description: <%= @company.long_description %><br>
+    Image: <br>
     <%= image_tag @company.image.url(:medium) %>
-
-    
+    <br>
+    <%= link_to "Approve", company_approval_path(@company.id, otherParam: "THIS IS THE VALUE")%>
+    <br>
+    <%= link_to "Deactivate", company_deactivate_path(@company.id) %>
 
   </body>
 </html>

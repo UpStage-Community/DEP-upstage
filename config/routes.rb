@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :users
   resources :companies
 
+  get '/companies/:id/approve', to: 'companies#approve', as: :company_approval
+  get '/companies/:id/deactivate', to: 'companies#deactivate', as: :company_deactivate
   get '/about', to: 'pages#about'
   get '/thanks', to: 'pages#thanks'
   get '/auth/:provider/callback', to: 'sessions#create'
