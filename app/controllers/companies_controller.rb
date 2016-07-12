@@ -34,13 +34,6 @@ class CompaniesController < ApplicationController
 		redirect_to :root
 	end
 
-	def deactivate
-		@company = Company.find(params[:id])
-		@company.active = false
-		@company.save
-		redirect_to :root
-	end
-
 	def company_params
 		params.require(:company).permit(:name, :email, :url, :phone, :short_description, :long_description, :image)
 	end
