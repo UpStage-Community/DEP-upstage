@@ -2,8 +2,7 @@ class CompanyMailer < ApplicationMailer
 	def company_registered(company)
 		@company = company
 
-		mail(to: "info@upstagecommunity.com", 
-			from: @company.email, 
+		mail(to: "info@upstagecommunity.com",
 			subject: "Company Registration Request")
 	end
 

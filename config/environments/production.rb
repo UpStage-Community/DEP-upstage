@@ -105,6 +105,6 @@ Rails.application.configure do
 
   }
 
-  config.action_mailer.default_url_options = { :host => 'upsatgecommunity.com' }
+  config.action_mailer.default_url_options = { :host => 'https://upstagecommunity.com' }
 
 end
