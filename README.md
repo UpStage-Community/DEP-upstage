@@ -47,6 +47,9 @@ To bring the theatre community together in one place, promoting meaningful works
 
 ##FUTURE FEATURES
 
+* Galleries
+* Video ad
+
 - As a company admin
   - I can see who is following my company (Following)
   - I can add and edit genres for my company and productiong (Tags/Genre)
@@ -95,3 +98,4 @@ how did you hear about this show?
 would you like to volunteer for our company?  
 please donate!  
 some include actual feedback on the performance
+

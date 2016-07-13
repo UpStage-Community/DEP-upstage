@@ -7,6 +7,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails'
+gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 gem 'dotenv-rails', '~> 2.0.2'
@@ -16,6 +17,8 @@ gem 'omniauth-twitter'
 # gem "paperclip", "~> 4.3"
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
 gem "aws-sdk"
+
+gem 'devise'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 

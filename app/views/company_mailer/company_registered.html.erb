@@ -15,7 +15,8 @@
     Image: <br>
     <%= image_tag @company.image.url(:medium) %>
     <br>
-    <a href="upstagecommunity.com/companies/<%= @company.id%>/approve">Approve</a>
+    <%= link_to 'Approve', company_approval_url(@company.id) %> 
+    <a href="localhost:3000/companies/<%= @company.id%>/approve">Approve</a>
 
   </body>
 </html>

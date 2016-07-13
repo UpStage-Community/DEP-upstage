@@ -1,4 +1,5 @@
 class CompaniesController < ApplicationController
+	before_action :authenticate_user!, only: [:new, :approve]
 
 	def index
 		@companies = Company.all.where(active: true)

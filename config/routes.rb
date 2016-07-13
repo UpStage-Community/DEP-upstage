@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   root 'pages#home'
 
   resources :productions #, only: [:index, :show]
@@ -9,8 +10,6 @@ Rails.application.routes.draw do
   get '/companies/:id/approve', to: 'companies#approve', as: :company_approval
   get '/about', to: 'pages#about'
   get '/thanks', to: 'pages#thanks'
-  get '/auth/:provider/callback', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
