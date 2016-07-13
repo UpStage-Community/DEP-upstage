@@ -15,7 +15,7 @@ Devise.setup do |config|
   config.mailer_sender = 'info@upstagecommunity.com'
 
   # Configure the class responsible to send e-mails.
-  confic.mailer = 'Application::Mailer'
+  config.mailer = 'Application::Mailer'
   # config.mailer = 'Devise::Mailer'
 
   # ==> ORM configuration
