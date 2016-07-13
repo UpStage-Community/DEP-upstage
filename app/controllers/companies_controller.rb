@@ -17,8 +17,8 @@ class CompaniesController < ApplicationController
 		@company = Company.new(company_params)
 		if @company.save
 			if Rails.env.production?
-				CompanyMailer.company_registered(@company).deliver_now
 			end
+			CompanyMailer.company_registered(@company).deliver_now
 			@company.company_members.create(user: current_user)
 			redirect_to thanks_path(type: "Company Registration")
 		else
