@@ -1,14 +1,15 @@
-<h1>Register a new production</h1>
+<h1>Register a new production for <%= @company.name %></h1>
 <%= form_for @production, url: {action: "create"}, html: { multipart: true } do |f| %>
   <%= f.label :title %><br>
   <%= f.text_field :title %><br>
-  <%= f.file_field :image %><br>
   <%= f.label :description %><br>
   <%= f.text_area :description, size: "60x12" %><br>
   <%= f.label :price_range %><br>
   <%= f.text_field :price_range %><br>
   <%= f.label :ticket_url %><br>
   <%= f.text_field :ticket_url %><br>
+  <%= f.label :image %><br>
+  <%= f.file_field :image %><br><br>
 
-  <%= f.submit "Create" %>
+  <%= f.submit "Create" %><br><br>
 <% end %>

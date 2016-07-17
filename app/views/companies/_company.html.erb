@@ -1,0 +1,7 @@
+<% company.attributes.each do |key, val| %>
+    <% if %w(name phone email url short_description long_description active).include? key %>
+        <li><%= key %>: <%= val %></li>
+    <% end %>
+<% end %>
+<li><%= image_tag company.image.url(:thumb) %></li>
+

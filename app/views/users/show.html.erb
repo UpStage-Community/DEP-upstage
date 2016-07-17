@@ -1,6 +1,9 @@
 <h1>User Page</h1>
 <ul>
-<% @user.attributes.each do |attribute| %>
-  <li><%= attribute %></li>
+<% @user.attributes.each do |key, val| %>
+    <% if %w(name url bio role email sign_in_count ).include? key %>
+        <li><%= key %>: <%= val %></li>
+    <% end %>
 <% end %>
+<li><%= image_tag @user.image.url(:thumb) %></li>
 </ul>

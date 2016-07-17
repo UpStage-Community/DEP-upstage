@@ -1,0 +1,4 @@
+My Companies<br>
+<% @companies.each do |company| %>
+    <%= link_to company.name, company_admin_path(company) %><br>
+<% end %>

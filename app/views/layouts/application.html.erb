@@ -1,44 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Upstage</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <title>Upstage</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 </head>
 <body>
-  <% flash.each do |key, value| %>
-    <div class="alert-<%= key %>">
-      <%= value %>
+    <% flash.each do |key, value| %>
+        <div>
+            <%= value %>
+        </div>
+    <% end %>
+
+    <div class="main-content">
+        <%= yield %>
     </div>
-  <% end %>
+    <%= render 'layouts/navigation' %>
 
-  <nav>
-    <ul>NAVIGATION
-      <%= link_to "Home/Logo", :root %>
-      <%= link_to "Productions", productions_path %>
-      <%= link_to "Companies", companies_path %>
-      <%= link_to "About", about_path %>
-      <% if user_signed_in? %>
-        <%= link_to "Dashboard", user_path(current_user) %>
-        <%= link_to 'Sign Out', destroy_user_session_path, :method=>'delete' %>
-      <% else %>
-        <%= link_to "Sign In", new_user_session_path %>
-        <%= link_to "Register", new_user_registration_path %>
-
-      <% end %>
-
-    </ul>
-  </nav>
-
-<%= yield %>
-
-  <footer>
-    Footer!
-  </footer>
-
-<%= render 'modals/sign_in' %>
-<%= render 'modals/create_account' %>
 
 </body>
 </html>

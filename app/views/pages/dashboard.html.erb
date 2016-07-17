@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+    <%= link_to "My Profile", user_path(current_user) %><br>
+
+    <% if @companies.count == 0 %>
+        <%= link_to "Register My Company", new_company_path %><br>
+    <% elsif @companies.count == 1 %>
+            <%= link_to "Company: #{@companies[0].name}", company_admin_path(@companies[0]) %><br>
+    <% else %>
+        <%= link_to "My Companies", my_companies_path %><br>
+    <% end %>
+
+    <%= link_to 'Sign Out', destroy_user_session_path, :method=>'delete' %>
+
+<% else %>
+    <%= link_to "Sign In", new_user_session_path %><br>
+    <%= link_to "Register for Full Access", new_user_registration_path %>
+<% end %>

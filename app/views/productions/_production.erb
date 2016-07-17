@@ -2,7 +2,9 @@
   <ul>
 
     <% production.attributes.each do |key, val|  %>
-      <li><%= key %>: <%= val %></li>
+        <% if  %w(company_id title description price_range ticket_url).include? key%>
+            <li><%= key %>: <%= val %></li>
+        <% end %>
     <% end  %>
 
     <li><%= image_tag production.image.url(:thumb) %></li>

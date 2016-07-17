@@ -1,9 +1,4 @@
-Companies Index (Being Built)
+Companies Index
 
 <br><br>
-<% @companies.each do |company| %>
-	<%= company.name %><br>
-	<%= image_tag company.image.url(:thumb) %>
-	<br>
-	<br>
-<% end %>
+<%= render @companies %>

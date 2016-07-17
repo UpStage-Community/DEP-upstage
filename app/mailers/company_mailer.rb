@@ -10,5 +10,10 @@ class CompanyMailer < ApplicationMailer
 		@company = company
 		mail(to: @company.email,
 			subject: "#{@company.name} is live on UpStage Community!")
+		@company.company_members.each do |member|
+			mail(to: member.user.email,
+				subject: "#{@company.name} is live on UpStage Community!")
+		end
+
 	end
 end

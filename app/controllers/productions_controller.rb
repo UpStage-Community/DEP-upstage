@@ -5,18 +5,20 @@ class ProductionsController < ApplicationController
   end
 
   def show
-
+    @production = Production.find(params[:id])
   end
 
   def new
+    @company = Company.find(params[:company_id])
     @production = Production.new
   end
 
   def create
     p params
-    @production = Production.new(production_params)
+    @company = Company.find(params[:company_id])
+    @production = @company.productions.new(production_params)
     if @production.save
-      redirect_to root_url
+      redirect_to @production
     end
   end
 
