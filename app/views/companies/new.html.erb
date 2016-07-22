@@ -11,6 +11,8 @@ Register Your Company
 	<%= f.text_field :url %><br>
 	<%= f.label :phone %><br>
 	<%= f.number_field :phone %><br>
+	<label>Your Title/Role</label><br>
+	<input type="text" name="company_member[title]" value="Company Admin"><br>
 	<%= f.label :short_description, "* Short Description" %><br>
 	<%= f.text_area :short_description, size: "60x2" %><br>
 	<%= f.label :long_description, "* Long Description" %><br>

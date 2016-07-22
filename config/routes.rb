@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   end
 
   get '/companies/:id/approve', to: 'companies#approve', as: :company_approval
-  get '/companies/:id/admin', to: 'companies#admin_show', as: :company_admin
+  get '/companies/:id/admin', to: 'companies#member_show', as: :company_member
+  get '/my_productions', to: 'productions#my_productions', as: :my_productions
   get '/my_companies', to: 'companies#my_companies', as: :my_companies
   get '/about', to: 'pages#about'
   get '/thanks', to: 'pages#thanks'

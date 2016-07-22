@@ -1,4 +1,4 @@
 My Companies<br>
 <% @companies.each do |company| %>
-    <%= link_to company.name, company_admin_path(company) %><br>
+    <%= link_to company.name, company_member_path(company) %><br>
 <% end %>

@@ -5,6 +5,6 @@ Productions:<br>
 <%= link_to "Register a Production", new_company_production_path(@company) %><br>
 
 <% @productions.each do |production| %>
-    <%= production.title %>
+    <%= link_to production.title, production_path(production) %>
 <% end %>
 
