@@ -5,7 +5,7 @@ class Company < ActiveRecord::Base
 
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
   has_many :productions
-  has_many :members, through: :company_members, class_name: "User"
+  has_many :members, through: :company_members, foreign_key: 'user_id', class_name: "User", source: :user
   has_many :company_members
   # has_many :rating, through: :productions
 
